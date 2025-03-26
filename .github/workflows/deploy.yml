@@ -21,7 +21,7 @@ jobs:
         script: |
           if [ ! -d "/var/www/html/cicd/2305045" ]; then
             mkdir -p /var/www/html/cicd/2305045
-            echo "Folder 2305045 dibuat!"
+            echo "Folder 2305045 dibuat"
           fi
           cd /var/www/html/cicd/2305045
           git pull origin main
