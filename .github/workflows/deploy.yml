@@ -19,6 +19,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 64000
         script: |
-          cd /var/www/html/cicd/nim_kalian
-          git pull origin main
+	        mkdir -p /var/www/html/cicd # lebih baik lagi pakai if check folder exists
+	        mkdir -p /var/www/html/cicd/2305045 # lebih baik lagi pakai if check folder exists
+	        cd /var/www/html/cicd/2305045
+	        git pull origin main
           # Tambahkan perintah deploy lainnya jika diperlukan
